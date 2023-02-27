@@ -1,15 +1,10 @@
 // задача 2
-function aclean(arr) {
-  let map = new Map()
+let messages = [
+  { text: 'Hello', from: 'John' },
+  { text: 'How goes?', from: 'John' },
+  { text: 'See you soon', from: 'Alice' },
+]
 
-  for (let word of arr) {
-    let sorted = word.toLowerCase().split('').sort().join('')
-    map.set(sorted, word)
-  }
+let readMap = new WeakMap()
 
-  return Array.from(map.values())
-}
-
-let arr = ['nap', 'teachers', 'cheaters', 'PAN', 'ear', 'era', 'hectares']
-
-alert(aclean(arr))
+readMap.set(messages[0], new Date(2017, 1, 1))
