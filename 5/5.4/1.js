@@ -1,0 +1,9 @@
+// задача 1
+let fruits = ['Яблоки', 'Груша', 'Апельсин']
+
+// добавляем новое значение в "копию"
+let shoppingCart = fruits
+shoppingCart.push('Банан')
+
+// что в fruits? ["Яблоки", "Груша", "Апельсин", "Банан"];
+alert(fruits.length) // 4

@@ -1,5 +1,6 @@
 // задача 1
-let a = +prompt('Первое число: ', '')
-let b = +prompt('Второе число: ', '')
+function ucFirst(str) {
+  if (!str) return str
 
-alert('Сумма: ' + (a + b))
+  return str[0].toUpperCase() + str.slice(1)
+}

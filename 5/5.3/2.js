@@ -1,5 +1,6 @@
 // задача 2
-//из-за особенности языка 6.35 является бесконечной двоичной дробью и хранится потерей точности…
+function checkSpam(str) {
+  let lowerCaseStr = str.toLowerCase()
 
-//правильное округление
-alert((6.35 * 10).toFixed(20))
+  return lowerCaseStr.includes('viagra') || lowerCaseStr.includes('xxx')
+}
