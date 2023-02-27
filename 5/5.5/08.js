@@ -10,5 +10,5 @@ let usersMapped = users.map((user) => ({
   id: user.id,
 }))
 
-alert(usersMapped[0].id) // 1
-alert(usersMapped[0].fullName) // Вася Пупкин
+alert(usersMapped[0].id)
+alert(usersMapped[0].fullName)
