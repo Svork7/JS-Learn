@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <select id="genres">
+      <option value="rock">Рок</option>
+      <option value="blues" selected>Блюз</option>
+    </select>
+    <script>
+      // Выведите значение и текст выбранного пункта.
+      let selectedOption = genres.options[genres.selectedIndex]
+      alert(selectedOption.value)
+      alert(selectedOption.text)
+
+      // Добавьте пункт: <option value="classic">Классика</option>.
+      let newOption = new Option('Классика', 'classic')
+      genres.append(newOption)
+
+      // Сделайте его выбранным.
+      newOption.selected = true
+    </script>
+  </body>
+</html>
